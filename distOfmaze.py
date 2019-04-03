@@ -14,14 +14,12 @@ for test_case in range(1, T+1):
             temp.append(0)
         visited.append(temp)
 
-    # print(maze)
-    # print(visited)
     start = []
     i = 0
     while start == [] and i < n:
         j = 0
         while start == [] and j < n:
-            if  maze[i][j] == 2:
+            if maze[i][j] == 2:
                 start = [i, j]
             j += 1
         i += 1
